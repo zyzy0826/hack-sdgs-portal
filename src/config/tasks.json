@@ -1,0 +1,24 @@
+{
+  "basicTasks": [
+    { "id": "task_01", "title": "在公館捷運站 2 號出口拍團體照", "description": "起始任務，抵達商圈後立即完成", "points": 1 },
+    { "id": "task_02", "title": "（任務二）", "description": "（說明）", "points": 1 },
+    { "id": "task_03", "title": "（任務三）", "description": "（說明）", "points": 1 },
+    { "id": "task_04", "title": "（任務四）", "description": "（說明）", "points": 1 },
+    { "id": "task_05", "title": "（任務五）", "description": "（說明）", "points": 1 },
+    { "id": "task_06", "title": "（任務六）", "description": "（說明）", "points": 1 },
+    { "id": "task_07", "title": "（任務七）", "description": "（說明）", "points": 1 },
+    { "id": "task_08", "title": "（任務八）", "description": "（說明）", "points": 1 },
+    { "id": "task_09", "title": "（任務九）", "description": "（說明）", "points": 1 },
+    { "id": "task_10", "title": "（任務十）", "description": "（說明）", "points": 1 }
+  ],
+  "specialTasks": [
+    { "id": "special_01", "title": "全組拍一張「網美照」", "description": "找到你們覺得最美的角落，全組拍一張網美照", "unlockCondition": 5, "points": 2 },
+    { "id": "special_02", "title": "（特殊任務二）", "description": "（說明）", "unlockCondition": 7, "points": 2 },
+    { "id": "special_03", "title": "（特殊任務三）", "description": "（說明）", "unlockCondition": 10, "points": 2 }
+  ],
+  "bonusPoses": [
+    { "id": "pose_01", "name": "全員比愛心", "description": "所有入鏡人員比出愛心手勢", "points": 1 },
+    { "id": "pose_02", "name": "（Pose 二）", "description": "（說明）", "points": 1 },
+    { "id": "pose_03", "name": "（Pose 三）", "description": "（說明）", "points": 1 }
+  ]
+}
