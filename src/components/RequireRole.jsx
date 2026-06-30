@@ -16,7 +16,7 @@ export default function RequireRole({ role, title, children }) {
   return (
     <PasswordModal
       title={title}
-      expected={PASSWORDS[role]}
+      expectedHash={PASSWORDS[role]}
       onSuccess={() => {
         setAuthed(role)
         setOk(true)

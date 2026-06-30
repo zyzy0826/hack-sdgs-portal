@@ -100,7 +100,7 @@ export default function Home() {
           title={
             pwRole === 'leader' ? '隊輔密碼' : pwRole === 'gamemaster' ? '關主密碼' : '工作人員密碼'
           }
-          expected={PASSWORDS[pwRole]}
+          expectedHash={PASSWORDS[pwRole]}
           onSuccess={onPwSuccess}
           onCancel={() => setPwRole(null)}
         />
