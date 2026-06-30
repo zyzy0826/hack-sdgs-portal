@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" shape-rendering="crispEdges">
+  <rect width="320" height="200" fill="#5B8731"/>
+  <rect y="150" width="320" height="50" fill="#8B6914"/>
+  <rect x="40" y="40" width="40" height="40" fill="#55CDFC"/>
+  <rect x="100" y="40" width="40" height="40" fill="#F5F0E1"/>
+  <rect x="160" y="40" width="40" height="40" fill="#CC3333"/>
+  <rect x="220" y="40" width="40" height="40" fill="#FFD700"/>
+  <text x="160" y="120" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">SAMPLE IMAGE</text>
+  <text x="160" y="180" font-family="monospace" font-size="12" fill="#F5F0E1" text-anchor="middle">換成你的圖片</text>
+</svg>

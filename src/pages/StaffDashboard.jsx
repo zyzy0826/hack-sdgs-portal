@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import RequireRole from '../components/RequireRole'
 import PixelBar from '../components/PixelBar'
 import { useDbValue } from '../hooks/useDbValue'
+import { clearAuth } from '../utils/auth'
 import teamsConfig from '../config/teams.json'
 import {
   BASIC_TASKS,
@@ -115,6 +116,17 @@ function DashboardInner() {
             🏆 閉幕排名
           </button>
         </div>
+
+        <button
+          className="mc-btn mc-btn--danger"
+          style={{ width: '100%', marginTop: 12 }}
+          onClick={() => {
+            clearAuth('admin')
+            navigate('/')
+          }}
+        >
+          🔒 登出
+        </button>
       </div>
     </Layout>
   )

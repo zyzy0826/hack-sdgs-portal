@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
 import PixelBar from '../components/PixelBar'
+import TaskDetailModal from '../components/TaskDetailModal'
 import { useDbValue } from '../hooks/useDbValue'
 import {
   BASIC_TASKS,
@@ -14,6 +15,9 @@ import {
 export default function Student() {
   const { teamId } = useParams()
   const { data, loading } = useDbValue(`gongguan/team_${teamId}`)
+
+  // 目前開啟詳情的任務：{ task, status } | null
+  const [selected, setSelected] = useState(null)
 
   const score = computeGongguanScore(data)
   const basicState = data?.basicTasks || {}
@@ -49,7 +53,13 @@ export default function Student() {
             const done = !!basicState[t.id]?.completed
             const pose = !!basicState[t.id]?.pose
             return (
-              <div key={t.id} className={`task-item ${done ? 'task-item--done' : ''}`}>
+              <div
+                key={t.id}
+                className={`task-item task-item--clickable ${done ? 'task-item--done' : ''}`}
+                onClick={() =>
+                  setSelected({ task: t, status: { label: done ? '已完成' : '未完成', done } })
+                }
+              >
                 <div className="task-row">
                   <div>
                     <div className="task-title">{t.title}</div>
@@ -58,6 +68,7 @@ export default function Student() {
                   </div>
                   <div className="task-status-icon">{done ? '✅' : '⬜'}</div>
                 </div>
+                <div className="detail-hint">👆 點擊查看詳情</div>
               </div>
             )
           })}
@@ -77,9 +88,12 @@ export default function Student() {
             return (
               <div
                 key={t.id}
-                className={`task-item ${done ? 'task-item--done' : ''} ${
+                className={`task-item task-item--clickable ${done ? 'task-item--done' : ''} ${
                   unlocking[t.id] ? 'task-unlocking' : ''
                 }`}
+                onClick={() =>
+                  setSelected({ task: t, status: { label: done ? '已完成' : '未完成', done } })
+                }
               >
                 <div className="task-row">
                   <div>
@@ -89,6 +103,7 @@ export default function Student() {
                   </div>
                   <div className="task-status-icon">{done ? '✅' : '⬜'}</div>
                 </div>
+                <div className="detail-hint">👆 點擊查看詳情</div>
               </div>
             )
           })}
@@ -108,6 +123,12 @@ export default function Student() {
               基本 {score.basicPts} + 特殊 {score.specialPts} + Pose {score.posePts}
             </div>
           </div>
+
+          <TaskDetailModal
+            task={selected?.task}
+            status={selected?.status}
+            onClose={() => setSelected(null)}
+          />
         </>
       )}
     </Layout>

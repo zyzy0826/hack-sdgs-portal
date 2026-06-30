@@ -1,6 +1,6 @@
 {
   "basicTasks": [
-    { "id": "task_01", "title": "在公館捷運站 2 號出口拍團體照", "description": "起始任務，抵達商圈後立即完成", "points": 1 },
+    { "id": "task_01", "title": "在公館捷運站 2 號出口拍團體照", "description": "起始任務，抵達商圈後立即完成", "detail": "全隊抵達公館捷運站 2 號出口後，找路人或工作人員幫忙拍一張全員入鏡的團體照。這是後續所有任務的起點，拍完才算正式開始闖關！", "images": ["task-images/sample.svg"], "points": 1 },
     { "id": "task_02", "title": "（任務二）", "description": "（說明）", "points": 1 },
     { "id": "task_03", "title": "（任務三）", "description": "（說明）", "points": 1 },
     { "id": "task_04", "title": "（任務四）", "description": "（說明）", "points": 1 },
@@ -12,7 +12,7 @@
     { "id": "task_10", "title": "（任務十）", "description": "（說明）", "points": 1 }
   ],
   "specialTasks": [
-    { "id": "special_01", "title": "全組拍一張「網美照」", "description": "找到你們覺得最美的角落，全組拍一張網美照", "unlockCondition": 5, "points": 2 },
+    { "id": "special_01", "title": "全組拍一張「網美照」", "description": "找到你們覺得最美的角落，全組拍一張網美照", "detail": "在公館商圈找到你們覺得最有特色、最美的角落（咖啡廳、彩繪牆、河堤…），全組合力拍出一張有美感的網美照。構圖、光線、姿勢都可以加分喔！", "images": ["task-images/sample.svg"], "unlockCondition": 5, "points": 2 },
     { "id": "special_02", "title": "（特殊任務二）", "description": "（說明）", "unlockCondition": 7, "points": 2 },
     { "id": "special_03", "title": "（特殊任務三）", "description": "（說明）", "unlockCondition": 10, "points": 2 }
   ],
