@@ -23,15 +23,18 @@ function blankTeamTasks() {
 // 只在缺資料時寫入，不會覆寫既有進度。
 export async function ensureInitialized() {
   try {
+    // 任務內容以 JSON 設定為準：每次初始化都覆寫 tasks / specialTasks / poses，
+    // 確保舊資料被最新內容取代。boardGames 僅在缺少時補上，避免動到既有資料。
     const configSnap = await get(ref(db, `${CAMP_ROOT}/config`))
-    if (!configSnap.exists()) {
-      await set(ref(db, `${CAMP_ROOT}/config`), {
-        tasks: tasksConfig.basicTasks,
-        specialTasks: tasksConfig.specialTasks,
-        poses: tasksConfig.bonusPoses,
-        boardGames,
-      })
+    const configUpdates = {
+      tasks: tasksConfig.basicTasks,
+      specialTasks: tasksConfig.specialTasks,
+      poses: tasksConfig.bonusPoses,
     }
+    if (!configSnap.child('boardGames').exists()) {
+      configUpdates.boardGames = boardGames
+    }
+    await update(ref(db, `${CAMP_ROOT}/config`), configUpdates)
 
     const teamsSnap = await get(ref(db, `${CAMP_ROOT}/teams`))
     if (!teamsSnap.exists()) {

@@ -1,24 +1,113 @@
 {
   "basicTasks": [
-    { "id": "task_01", "title": "在公館捷運站 2 號出口拍團體照", "description": "起始任務，抵達商圈後立即完成", "detail": "全隊抵達公館捷運站 2 號出口後，找路人或工作人員幫忙拍一張全員入鏡的團體照。這是後續所有任務的起點，拍完才算正式開始闖關！", "images": ["task-images/sample.svg"], "points": 1 },
-    { "id": "task_02", "title": "（任務二）", "description": "（說明）", "points": 1 },
-    { "id": "task_03", "title": "（任務三）", "description": "（說明）", "points": 1 },
-    { "id": "task_04", "title": "（任務四）", "description": "（說明）", "points": 1 },
-    { "id": "task_05", "title": "（任務五）", "description": "（說明）", "points": 1 },
-    { "id": "task_06", "title": "（任務六）", "description": "（說明）", "points": 1 },
-    { "id": "task_07", "title": "（任務七）", "description": "（說明）", "points": 1 },
-    { "id": "task_08", "title": "（任務八）", "description": "（說明）", "points": 1 },
-    { "id": "task_09", "title": "（任務九）", "description": "（說明）", "points": 1 },
-    { "id": "task_10", "title": "（任務十）", "description": "（說明）", "points": 1 }
+    {
+      "id": "task_01",
+      "title": "在公館捷運站 2 號出口拍團體照",
+      "description": "起始任務，抵達商圈後立即完成",
+      "points": 1
+    },
+    {
+      "id": "task_02",
+      "title": "到「塊雞師事務所」前拍照",
+      "description": "要拍到招牌，全組入鏡",
+      "points": 1
+    },
+    {
+      "id": "task_03",
+      "title": "到水源市場前的天橋上大喊一句指定台詞",
+      "description": "要大聲喊出來，有影片為證",
+      "points": 1
+    },
+    {
+      "id": "task_04",
+      "title": "找到一隻貓或狗，全組跟牠合照",
+      "description": "在公館商圈附近找到貓貓狗狗，全組一起合照",
+      "points": 1
+    },
+    {
+      "id": "task_05",
+      "title": "跟一個路人說「你的褲子裡有松鼠🐿️」",
+      "description": "找一個路人，認真地跟他說這句話，拍照或錄影為證",
+      "points": 1
+    },
+    {
+      "id": "task_06",
+      "title": "跟一個路人講冷笑話",
+      "description": "找一個路人講冷笑話，拍下路人的反應",
+      "points": 1
+    },
+    {
+      "id": "task_07",
+      "title": "拿 100 元請路人幫忙買一樣東西",
+      "description": "給路人 100 元，請他幫你們買一樣東西回來",
+      "points": 1
+    },
+    {
+      "id": "task_08",
+      "title": "到「小高拉麵」前面說：「Hello 大家好 我是老高」",
+      "description": "站在小高拉麵店門口，對著鏡頭說出這句話，錄影為證",
+      "points": 1
+    },
+    {
+      "id": "task_09",
+      "title": "跟生魚片合照",
+      "description": "找到有生魚片的店或攤位，全組跟生魚片合照",
+      "points": 1
+    },
+    {
+      "id": "task_10",
+      "title": "全組玩食物接龍",
+      "description": "每人買一樣食物，所有食物的名字要能接龍成一句話，拍照為證",
+      "points": 1
+    }
   ],
   "specialTasks": [
-    { "id": "special_01", "title": "全組拍一張「網美照」", "description": "找到你們覺得最美的角落，全組拍一張網美照", "detail": "在公館商圈找到你們覺得最有特色、最美的角落（咖啡廳、彩繪牆、河堤…），全組合力拍出一張有美感的網美照。構圖、光線、姿勢都可以加分喔！", "images": ["task-images/sample.svg"], "unlockCondition": 5, "points": 2 },
-    { "id": "special_02", "title": "（特殊任務二）", "description": "（說明）", "unlockCondition": 7, "points": 2 },
-    { "id": "special_03", "title": "（特殊任務三）", "description": "（說明）", "unlockCondition": 10, "points": 2 }
+    {
+      "id": "special_01",
+      "title": "問一個台大學生說：「你為什麼不讀台科大」",
+      "description": "找到一個台大學生，認真問他這個問題，錄下他的反應",
+      "unlockCondition": 5,
+      "points": 2
+    },
+    {
+      "id": "special_02",
+      "title": "找一個路人幫你解 LeetCode 的 Two Sum",
+      "description": "拿手機給路人看題目，請他幫你解，拍照或錄影為證",
+      "unlockCondition": 7,
+      "points": 2
+    },
+    {
+      "id": "special_03",
+      "title": "畫一隻小人藏在公館商圈某處",
+      "description": "畫一隻小人藏在商圈的某個角落，拍照記錄藏的位置",
+      "unlockCondition": 10,
+      "points": 2
+    }
   ],
   "bonusPoses": [
-    { "id": "pose_01", "name": "全員比愛心", "description": "所有入鏡人員比出愛心手勢", "points": 1 },
-    { "id": "pose_02", "name": "（Pose 二）", "description": "（說明）", "points": 1 },
-    { "id": "pose_03", "name": "（Pose 三）", "description": "（說明）", "points": 1 }
+    {
+      "id": "pose_01",
+      "name": "全員比愛心",
+      "description": "所有入鏡人員比出愛心手勢",
+      "points": 1
+    },
+    {
+      "id": "pose_02",
+      "name": "五芒星",
+      "description": "五個人擺出五芒星的姿勢",
+      "points": 1
+    },
+    {
+      "id": "pose_03",
+      "name": "全員跳躍",
+      "description": "所有人同時跳起來，拍出騰空照",
+      "points": 1
+    },
+    {
+      "id": "pose_04",
+      "name": "遇到其他小隊做特定動作",
+      "description": "遇到別隊時全員一起做指定動作（例如鞠躬）",
+      "points": 1
+    }
   ]
 }
